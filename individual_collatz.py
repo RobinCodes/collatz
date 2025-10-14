@@ -1,7 +1,7 @@
 import time
 
-STEP_LIMIT = 100000
-TIME_LIMIT = 10 # in seconds per number
+STEP_LIMIT = 1000000
+TIME_LIMIT = 1000 # in seconds per number
 
 history = set()
 start_time = time.time()
@@ -37,8 +37,9 @@ if __name__ == "__main__":
             history.clear()
             steps = 0
             start_time = time.time()
-            result = collatz(value)
-            if result != 0:
-                print(f"Value: {value}, Result: {result}")
+            if value != 1:
+                result = collatz(value)
+                if result != 0:
+                    print(f"Value: {value}, Result: {result}")
                 
 print("Enumerated.")

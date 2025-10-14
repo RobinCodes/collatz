@@ -1,9 +1,9 @@
 import time
 
-N = 10_000_000 # no. of values to try after lower bound
 STEP_LIMIT = 500
 TIME_LIMIT = 0.20 # in seconds per number
-CURR_LOW_BOUND = 2**71+1+(10**6 * 43)
+CURR_LOW_BOUND = 2**71+1+(10**7 * 1)
+N = 1_000_000_000 # no. of values to try after lower bound
 
 history = set()
 start_time = time.time()
@@ -71,7 +71,7 @@ print("Compiled.")
     exit(0)"""
 
 if len(timeout) > 0 or len(out_of_bounds) > 0:
-    print("Some machines ran over time, or ran out of bounds.")
+    print("Some numbers ran over time, or ran out of bounds.")
     
 with open("School Projects [Scripts]/8th Grade/Self/Collatz/data.txt", "w") as f:
     for i in timeout:
