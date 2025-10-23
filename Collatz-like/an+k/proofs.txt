@@ -29,3 +29,16 @@ for a = 1 for every n, k:
 a = 2, k = 2
 all sequences must loop. (downwards-trend argument proof).
 only loop: 1 -> 4 -> 2 -> 1 (informal proof!)
+
+----------------- observations of individual functions -------------------
+from this point onwards, some new method would have to be discovered in order to prove
+behaviour of all sequences (since downwards-trend argument proof no longer works),
+so I will be making observations of the remaining 2 functions with a, k in [0,3]
+
+a = 3, k = 1:
+all sequences must loop.
+only loop is 1->4->2->1
+
+a = 3, k = 3
+all sequences must loop.
+only loop is 6 -> 3 -> 12
