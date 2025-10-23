@@ -1,0 +1,31 @@
+(all the proofs manually in handbook, maybe some niche funfacts about behaviour.)
+f(n) = {
+    --> an+k, if n ≡ 1 (mod 2)
+    --> n/2, if n ≡ 0 (mod 2)
+}
+--------------------
+for a = 0 for every n, k a loop is entered.
+- for odd k, loop: k->k
+- for even k, loop: (preperiod) -> odd -> |loop_begins| k -> k
+for k = 0 for every n, a:
+- odd a: sequence diverges
+- even a: sequence diverges 
+- - unless a = 2^x, then it forms an odd -> big_even loop, which is log_2(a) + 2 long.
+for a even, k odd, for all n sequence diverges.
+for a odd, k even, for all n sequence diverges.
+c(n) denotes the count of functions with a, k < n and nontrivial behaviour ( for now )
+
+    ⎧ (N^2)/2 - N + 1, if N is even,
+c(n)
+    ⎨ ((N-1)^2)/2, if N is odd.
+    ⎩
+
+for a = 1 for every n, k:
+- even k: all sequences diverge from odds
+- odd k: downwards-trend argument proof: all must loop
+- - two loops: 1 -> ... -> 1 and k -> 2k -> k
+
+----------------- individual function proofs ---------------------
+a = 2, k = 2
+all sequences must loop. (downwards-trend argument proof).
+only loop: 1 -> 4 -> 2 -> 1 (informal proof!)

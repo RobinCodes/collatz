@@ -1,0 +1,10 @@
+a, k < 2, count of valid functions: 0
+a, k < 3, count of valid functions: 0
+a, k < 4, count of valid functions: 2
+a, k < 5, count of valid functions: 5
+a, k < 6, count of valid functions: 9
+a, k < 7, count of valid functions: 14
+a, k < 8, count of valid functions: 20
+a, k < 9, count of valid functions: 27
+a, k < 10, count of valid functions: 35
+a, k < 11, count of valid functions: 44
