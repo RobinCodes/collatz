@@ -7,7 +7,7 @@ Configuration:
     limit_n   : highest starting integer to run (from 1)
 """
 
-def collatz_next(n):
+def collatz_next(n: int):
     return n // 2 if n % 2 == 0 else 3 * n + 3
 
 def main():
